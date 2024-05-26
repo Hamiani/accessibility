@@ -1,0 +1,9 @@
+.App {
+  padding-bottom: 0.5em;
+  min-height: 100vh;
+  margin-right: 0px !important;
+}
+
+.content {
+  padding: 8em 3em 0.5em 3em;
+}

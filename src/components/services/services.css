@@ -1,0 +1,14 @@
+.services {
+  .ant-card {
+    min-height: 420px;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+  }
+
+  h4 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+}
