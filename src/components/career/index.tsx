@@ -11,7 +11,7 @@ const Career = () => {
     <main className="content career">
       <Row justify={"space-between"} align={"middle"}>
         <Col xs={24} sm={24} md={10} lg={10} xl={8} xxl={8}>
-          <h1>LILLE</h1>
+          <h1 id="lille-heading">LILLE</h1>
           <p>
             Surnommée la capitale des Flandres, où se côtoient intempéries et
             amateurs de bières, on ne présente plus Lille ! Notre équipe
@@ -28,12 +28,13 @@ const Career = () => {
           <img
             width={isMobile ? 400 : 700}
             height={isMobile ? 400 : 500}
+            aria-labelledby="lille-heading"
             alt="Illustration graphique représentant les membres d'une équipe qui analysent des données et qui résolvent des problèmes"
             src="https://careers.wemanity.com/img/offices/header-office-lille.svg"
           />
         </Col>
       </Row>
-      <h2>LES À-CÔTÉS SYMPAS DE NOS LOCAUX</h2>
+      <h2 id="amenities-heading">LES À-CÔTÉS SYMPAS DE NOS LOCAUX</h2>
       <Row justify={"space-between"} className="pt-2">
         <Col className="center" span={4}>
           <img
@@ -123,7 +124,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`quality analyst`.toUpperCase()}</h6>}
+              title={<h3>{`quality analyst`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
             />
             <div />
@@ -133,7 +134,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`développeur java jee`.toUpperCase()}</h6>}
+              title={<h3>{`développeur java jee`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
             />
             <Divider />
@@ -143,7 +144,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`développeur node js`.toUpperCase()}</h6>}
+              title={<h3>{`développeur node js`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
             />
             <Divider />
@@ -154,9 +155,9 @@ const Career = () => {
           <Card hoverable>
             <Meta
               title={
-                <h6>
+                <h3 style={{ whiteSpace: "break-spaces" }}>
                   {`développeur mobile (Android et/ou IOS)`.toUpperCase()}
-                </h6>
+                </h3>
               }
               description={<p>Lille, France</p>}
             />
@@ -167,7 +168,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`designer ux/ui`.toUpperCase()}</h6>}
+              title={<h3>{`designer ux/ui`.toUpperCase()}</h3>}
               description={<p>{`Lille, France`.toUpperCase()}</p>}
             />
             <Divider />
@@ -177,7 +178,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`scrum master`.toUpperCase()}</h6>}
+              title={<h3>{`scrum master`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
             />
             <Divider />
@@ -187,7 +188,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`product owner`.toUpperCase()}</h6>}
+              title={<h3>{`product owner`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
             />
             <Divider />
@@ -197,7 +198,7 @@ const Career = () => {
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
           <Card hoverable>
             <Meta
-              title={<h6>{`ingénieur devops`.toUpperCase()}</h6>}
+              title={<h3>{`ingénieur devops`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
             />
             <Divider />

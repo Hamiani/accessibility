@@ -7,7 +7,7 @@ const Body = () => {
   const isMobile = useMediaQuery({ maxWidth: 1000 });
 
   return (
-    <div className="content home">
+    <main className="content home">
       <Row justify={"start"} align={"middle"}>
         <Col xs={24} sm={24} md={24} lg={10} xl={8} xxl={8}>
           <img
@@ -18,21 +18,25 @@ const Body = () => {
           />
         </Col>
         <Col xs={24} sm={24} md={24} lg={14} xl={16} xxl={16}>
-          <section>
-            <h1>Bienvenue sur notre page !</h1>
-            <article className="justify">
-              Nous sommes fiers d’être partenariat Gold pour le DevFest cette
-              année. En tant qu'entreprise dédiée à l'innovation et à
-              l'inclusion, Wemanity a préparé une animation spéciale sur notre
-              stand pour cet événement incontournable
+          <section aria-labelledby="section1-title">
+            <h1 id="section1-title">Bienvenue sur notre page !</h1>
+            <article>
+              <p>
+                Nous sommes fiers d’être partenariat Gold pour le DevFest cette
+                année. En tant qu'entreprise dédiée à l'innovation et à
+                l'inclusion, Wemanity a préparé une animation spéciale sur notre
+                stand pour cet événement incontournable.
+              </p>
             </article>
-            <h3>Découvrez notre Animation sur l'Accessibilité</h3>
-            <article className="justify">
-              L'accessibilité numérique est au cœur de nos préoccupations. Pour
-              cette occasion, nous avons conçu une démonstration interactive
-              visant à illustrer l'importance d'une conception web accessible.
-              Venez découvrir par vous-même les différences entre une page web
-              accessible et une page qui ne l'est pas.
+            <h2>Découvrez notre Animation sur l'Accessibilité</h2>
+            <article>
+              <p>
+                L'accessibilité numérique est au cœur de nos préoccupations.
+                Pour cette occasion, nous avons conçu une démonstration
+                interactive visant à illustrer l'importance d'une conception web
+                accessible. Venez découvrir par vous-même les différences entre
+                une page web accessible et une page qui ne l'est pas.
+              </p>
             </article>
             <h3>Qu'allez-vous apprendre ?</h3>
             <ul>
@@ -47,13 +51,13 @@ const Body = () => {
               </li>
             </ul>
             <h3>Pourquoi est-ce important ?</h3>
-            <p className="justify">
+            <p>
               Une page web accessible ne bénéficie pas seulement aux
               utilisateurs ayant des besoins spécifiques, mais améliore aussi
               l'expérience de tous les visiteurs. Nous vous montrerons comment
               des ajustements simples peuvent faire une grande différence.
             </p>
-            <p className="justify">
+            <p>
               Nous vous invitons à visiter notre stand pour en savoir plus et
               participer à cette expérience éducative et enrichissante.
               Ensemble, construisons un web plus inclusif et accessible pour
@@ -69,52 +73,52 @@ const Body = () => {
             height={isMobile ? 300 : 400}
             width={isMobile ? "100%" : "90%"}
             src="https://www.youtube.com/embed/gOcsgyZXQlE"
-            title="La Table ronde Décathlon x Wemanity "
+            title="La Table ronde Décathlon x Wemanity"
           ></iframe>
         </Col>
         <Col xs={24} sm={24} md={24} lg={14} xl={16} xxl={16}>
-          <section>
-            <h1>La Table ronde Décathlon x Wemanity</h1>
-            <h3 className="justify">
+          <section aria-labelledby="section2-title">
+            <h2 id="section2-title">La Table ronde Décathlon x Wemanity</h2>
+            <h3>
               Plongez au cœur de notre récente table ronde sur le Product
               Marketing Management à Lille !
             </h3>
-            <p className="justify">
+            <p>
               Nous avons pu vivre une journée exceptionnelle au Nù Lille,
               réunissant des esprits brillants autour du Product Marketing
               Management.
             </p>
-            <p className="justify">
+            <p>
               Marion Joffre, Group Product Marketing Manager chez Decathlon, a
-              captivée l'audience en partageant son expertise et son expérience
+              captivé l'audience en partageant son expertise et son expérience
               sur le Product Marketing Management chez Decathlon Digital, tout
               en offrant un aperçu exclusif de sa collaboration fructueuse avec
               Wemanity.
             </p>
-            <p className="justify">Au programme de cette table ronde :</p>
+            <p>Au programme de cette table ronde :</p>
             <ul>
-              <li className="justify">
+              <li>
                 Des discussions stimulantes sur le déploiement du Product
                 Marketing Management chez Decathlon, les résultats concrets,
                 l’importance du PMM, la mise en place du PMM dans les
                 organisations et les retours de Marion sur sa collaboration avec
                 Wemanity.
               </li>
-              <li className="justify">
+              <li>
                 Le déjeuner, ponctuant notre table ronde, a offert l'occasion
                 idéale de prolonger les échanges dans une atmosphère conviviale,
                 renforçant les liens et créant des opportunités de synergies
                 futures.
               </li>
             </ul>
-            <p className="justify">
+            <p>
               Nous souhaitons remercier tous les participants pour avoir fait de
               cette table ronde un événement exceptionnel.
             </p>
           </section>
         </Col>
       </Row>
-    </div>
+    </main>
   );
 };
 

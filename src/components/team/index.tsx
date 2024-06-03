@@ -1,17 +1,23 @@
 import "./team.css";
+
 const Team = () => (
   <div className="content team">
     <h1>La répartition des équipes lilloises</h1>
     <p>Mot de passe : Lille2018 🔓</p>
 
     <iframe
-      width={"100%"}
-      style={{ borderRadius: "15px" }}
-      height={"700"}
+      width="100%"
+      height="700"
+      style={{ borderRadius: "15px", border: 0 }}
       src="https://view.genially.com/65797d850938f90014a7b6b8"
-      title="Présentation de l'équipe lilloise par practice "
+      title="Présentation de l'équipe lilloise par practice"
       loading="lazy"
+      aria-describedby="team-description"
     />
+    <div id="team-description" hidden>
+      Cette présentation affiche la répartition des équipes lilloises par
+      practice.
+    </div>
   </div>
 );
 

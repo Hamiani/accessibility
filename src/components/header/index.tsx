@@ -34,7 +34,7 @@ const Headers = () => {
         <iframe
           width={"100%"}
           height={"850"}
-          src="https://careers.wemanity.com/fr/contact"
+          src="https://careers.wemanity.com/fr/contact/"
           title="Présentation de l'équipe lilloise par practice "
           loading="lazy"
         />

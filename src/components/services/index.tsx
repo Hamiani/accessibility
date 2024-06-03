@@ -1,16 +1,15 @@
 import { Card, Col, Row } from "antd";
-
-import "./services.css";
 import { useMediaQuery } from "react-responsive";
+import "./services.css";
 
 const Services = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   return (
-    <div className="content services">
-      <Row justify={"space-between"} align={"middle"}>
+    <main className="content services">
+      <Row justify="space-between" align="middle">
         <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
-          <h1>Nos offres</h1>
+          <h1>NOS OFFRES</h1>
           <p>
             Dans un contexte de changement permanent, nous vous aidons à vous
             adapter et à maximiser la valeur apportée à vos clients. Véritables
@@ -18,10 +17,10 @@ const Services = () => {
             de l’entreprise à faire de la coopération, de l’innovation et de
             l’agilité vos armes de demain.
           </p>
-          <h3>
+          <h2>
             DÉCOUVREZ NOS EXPERTISES CLÉS POUR MENER VOTRE TRANSFORMATION DE
             BOUT EN BOUT
-          </h3>
+          </h2>
           <p>
             Wemanity est un écosystème d’innovation, spécialiste de la
             transformation des organisations.
@@ -51,7 +50,7 @@ const Services = () => {
           />
         </Col>
       </Row>
-      <Row justify={"space-between"} gutter={[48, 16]} align={"middle"}>
+      <Row justify="space-between" gutter={[48, 16]} align="middle">
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
             hoverable
@@ -64,11 +63,11 @@ const Services = () => {
               />
             }
           >
-            <h4>Transformation, stratégie & change</h4>
+            <h3>Transformation, stratégie & change</h3>
             <p>
               Cadrer et accompagner votre transformation agile grâce à des
               équipes pluridisciplinaires et à notre approche globale, associant
-              des assets à une expertise inégalée en agilité.`
+              des assets à une expertise inégalée en agilité.
             </p>
           </Card>
         </Col>
@@ -84,7 +83,7 @@ const Services = () => {
               />
             }
           >
-            <h4>Agile IT, architecture & API</h4>
+            <h3>Agile IT, architecture & API</h3>
             <p>
               Faire de la technologie un puissant moteur de votre stratégie
               business et construire un système d’information composable,
@@ -104,7 +103,7 @@ const Services = () => {
               />
             }
           >
-            <h4> Data & IA</h4>
+            <h3>Data & IA</h3>
             <p>
               Booster votre business à travers une utilisation stratégique et
               pérenne de vos données, axée sur l’approche client.
@@ -118,12 +117,12 @@ const Services = () => {
               <img
                 height={150}
                 width={150}
-                alt="Data & IA"
+                alt="Digital delivery & expérience utilisateur"
                 src="https://wemanity.com/img/activities/how-we-can-help-you-activities-05.svg"
               />
             }
           >
-            <h4>Digital delivery & expérience utilisateur</h4>
+            <h3>Digital delivery & expérience utilisateur</h3>
             <p>
               Concevoir et délivrer des produits digitaux innovants, adaptés aux
               usages de vos clients grâce à nos équipes pluridisciplinaires.
@@ -137,12 +136,12 @@ const Services = () => {
               <img
                 height={150}
                 width={150}
-                alt="Data & IA"
+                alt="Centre de formation"
                 src="https://wemanity.com/img/activities/how-we-can-help-you-activities-07.svg"
               />
             }
           >
-            <h4> Centre de formation</h4>
+            <h3>Centre de formation</h3>
             <p>
               Soutenir votre transformation par une expérience de formation
               sur-mesure pour ancrer les nouvelles compétences et les nouvelles
@@ -157,12 +156,12 @@ const Services = () => {
               <img
                 height={150}
                 width={150}
-                alt="Data & IA"
+                alt="Sustainable shift"
                 src="https://wemanity.com/img/activities/sustainable-shift.svg"
               />
             }
           >
-            <h4> Sustainable shift</h4>
+            <h3>Sustainable shift</h3>
             <p>
               Les entreprises ne peuvent plus se contenter de se transformer ;
               elles doivent élargir leurs critères de performance afin d’innover
@@ -173,7 +172,7 @@ const Services = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </main>
   );
 };
 
