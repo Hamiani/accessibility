@@ -12,12 +12,7 @@ const Team = () => (
       src="https://view.genially.com/65797d850938f90014a7b6b8"
       title="Présentation de l'équipe lilloise par practice"
       loading="lazy"
-      aria-describedby="team-description"
     />
-    <div id="team-description" hidden>
-      Cette présentation affiche la répartition des équipes lilloises par
-      practice.
-    </div>
   </div>
 );
 

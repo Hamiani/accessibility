@@ -62,3 +62,6 @@ export const createDynamicObject = (
   }
   return obj;
 };
+
+export const openInNewTab = (url: string) =>
+  window.open(url, "_blank", "noreferrer");

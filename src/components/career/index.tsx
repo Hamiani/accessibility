@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 import "./career.css";
 import Meta from "antd/es/card/Meta";
+import { openInNewTab } from "../../helper";
 
 const Career = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
@@ -122,7 +123,15 @@ const Career = () => {
         align={"middle"}
       >
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/quality-analyst-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`quality analyst`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
@@ -132,7 +141,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/developpeur-java-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`développeur java jee`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
@@ -142,7 +159,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/developpeur-node-js-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`développeur node js`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
@@ -152,7 +177,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/developpeur-mobile-lille/"
+              )
+            }
+          >
             <Meta
               title={
                 <h3 style={{ whiteSpace: "break-spaces" }}>
@@ -166,7 +199,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/ux-ui-designer-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`designer ux/ui`.toUpperCase()}</h3>}
               description={<p>{`Lille, France`.toUpperCase()}</p>}
@@ -176,7 +217,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/scrum-master-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`scrum master`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
@@ -186,7 +235,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/product-owner-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`product owner`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}
@@ -196,7 +253,15 @@ const Career = () => {
           </Card>
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card hoverable>
+          <Card
+            hoverable
+            role="button"
+            onClick={() =>
+              openInNewTab(
+                "https://careers.wemanity.com/fr/offres-emplois/ingenieur-devops-lille/"
+              )
+            }
+          >
             <Meta
               title={<h3>{`ingénieur devops`.toUpperCase()}</h3>}
               description={<p>Lille, France</p>}

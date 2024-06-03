@@ -1,6 +1,7 @@
 import { Card, Col, Row } from "antd";
 import { useMediaQuery } from "react-responsive";
 import "./services.css";
+import { openInNewTab } from "../../helper";
 
 const Services = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
@@ -53,7 +54,13 @@ const Services = () => {
       <Row justify="space-between" gutter={[48, 16]} align="middle">
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
+            role="button"
             hoverable
+            onClick={() =>
+              openInNewTab(
+                "https://wemanity.com/fr/organisations-agiles-conduite-changement/"
+              )
+            }
             cover={
               <img
                 height={150}
@@ -73,7 +80,9 @@ const Services = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
+            role="button"
             hoverable
+            onClick={() => openInNewTab("https://wemanity.com/fr/agile-IT/")}
             cover={
               <img
                 height={150}
@@ -93,7 +102,9 @@ const Services = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
+            role="button"
             hoverable
+            onClick={() => openInNewTab("https://wemanity.com/fr/data/")}
             cover={
               <img
                 height={150}
@@ -112,7 +123,13 @@ const Services = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
+            role="button"
             hoverable
+            onClick={() =>
+              openInNewTab(
+                "https://wemanity.com/fr/experience-utilisateur-digital-delivery/"
+              )
+            }
             cover={
               <img
                 height={150}
@@ -131,7 +148,11 @@ const Services = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
+            role="button"
             hoverable
+            onClick={() =>
+              openInNewTab("https://wemanity.com/fr/centre-de-formation/")
+            }
             cover={
               <img
                 height={150}
@@ -151,7 +172,6 @@ const Services = () => {
         </Col>
         <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
           <Card
-            hoverable
             cover={
               <img
                 height={150}
