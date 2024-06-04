@@ -30,7 +30,7 @@ const Career = () => {
             width={isMobile ? 400 : 700}
             height={isMobile ? 400 : 500}
             aria-labelledby="lille-heading"
-            alt="Illustration graphique représentant les membres d'une équipe qui analysent des données et qui résolvent des problèmes"
+            alt="Cinq personnages dans un bureau avec le beffroi de Lille en arrière plan"
             src="https://careers.wemanity.com/img/offices/header-office-lille.svg"
           />
         </Col>
@@ -87,14 +87,14 @@ const Career = () => {
         <Col xs={24} sm={24} md={16} lg={16} xl={16} xxl={16}>
           <img
             className="office-picture"
-            alt="Groupe de personnes assis autour d'un bureau des locaux de Wemanity Lille"
+            alt="L'espace de détente des bureaux de Wemanity à Lille présente un décor moderne avec des sièges confortables, de grandes plantes et une vue sur la rue grâce à des fenêtres arquées."
             src="https://careers.wemanity.com/img/offices/bureau_lille_1.jpg"
           />
         </Col>
         <Col xs={24} sm={24} md={8} lg={8} xl={8} xxl={8}>
           <img
             className="office-picture"
-            alt="Deux personnes assises autour d'un bureau des locaux de Wemanity Lille"
+            alt="Un mur végétal orné du logo lumineux de Wemanity décore les bureaux de l'entreprise à Lille, ajoutant une touche de nature et de modernité à l'espace de travail."
             src="https://careers.wemanity.com/img/offices/bureau_lille_2.jpg"
           />
         </Col>
@@ -102,14 +102,14 @@ const Career = () => {
         <Col xs={24} sm={24} md={10} lg={10} xl={10} xxl={10}>
           <img
             className="office-picture"
-            alt="Grande table blanche avec des chaises noires dans les locaux de Wemanity Lille"
+            alt="un espace de détente avec une table de billard moderne et un baby-foot, offrant aux employés des moments de convivialité et de relaxation."
             src="https://careers.wemanity.com/img/offices/bureau_lille_3.jpg"
           />
         </Col>
         <Col xs={24} sm={24} md={14} lg={14} xl={14} xxl={14}>
           <img
             className="office-picture"
-            alt="Groupe de personnes assis autour d'un bureau des locaux de Wemanity Lille"
+            alt=" Un espace de bureau moderne et lumineux  avec des postes de travail alignés près de grandes fenêtres arquées, une plante en pot et un fauteuil rose confortable au premier plan."
             src="https://careers.wemanity.com/img/offices/bureau_lille_4.jpg"
           />
         </Col>
@@ -118,161 +118,79 @@ const Career = () => {
 
       <Row
         className="pt-2"
-        justify={"space-between"}
+        justify="space-between"
         gutter={[16, 16]}
-        align={"middle"}
+        align="middle"
       >
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/quality-analyst-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`quality analyst`.toUpperCase()}</h3>}
-              description={<p>Lille, France</p>}
-            />
-            <div />
-            <p>Tech & DevOps / Lille / CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/developpeur-java-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`développeur java jee`.toUpperCase()}</h3>}
-              description={<p>Lille, France</p>}
-            />
-            <Divider />
-            <p>Tech & DevOps / Lille / CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/developpeur-node-js-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`développeur node js`.toUpperCase()}</h3>}
-              description={<p>Lille, France</p>}
-            />
-            <Divider />
-            <p>Tech & DevOps / Lille / CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/developpeur-mobile-lille/"
-              )
-            }
-          >
-            <Meta
-              title={
-                <h3 style={{ whiteSpace: "break-spaces" }}>
-                  {`développeur mobile (Android et/ou IOS)`.toUpperCase()}
-                </h3>
-              }
-              description={<p>Lille, France</p>}
-            />
-            <Divider />
-            <p>Tech & DevOps / Lille / CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/ux-ui-designer-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`designer ux/ui`.toUpperCase()}</h3>}
-              description={<p>{`Lille, France`.toUpperCase()}</p>}
-            />
-            <Divider />
-            <p>Experience Design (UX/UI) / Lille / CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/scrum-master-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`scrum master`.toUpperCase()}</h3>}
-              description={<p>Lille, France</p>}
-            />
-            <Divider />
-            <p>Scrum Mastering / Facilitaion / Lille/ CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/product-owner-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`product owner`.toUpperCase()}</h3>}
-              description={<p>Lille, France</p>}
-            />
-            <Divider />
-            <p>Product Management & Innovation / Lille/ CDI</p>
-          </Card>
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
-          <Card
-            hoverable
-            role="button"
-            onClick={() =>
-              openInNewTab(
-                "https://careers.wemanity.com/fr/offres-emplois/ingenieur-devops-lille/"
-              )
-            }
-          >
-            <Meta
-              title={<h3>{`ingénieur devops`.toUpperCase()}</h3>}
-              description={<p>Lille, France</p>}
-            />
-            <Divider />
-            <p>Tech & DevOps/ Lille/ CDI</p>
-          </Card>
-        </Col>
+        {jobOffers.map((job, index) => (
+          <Col key={index} xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
+            <Card hoverable role="button" onClick={() => openInNewTab(job.url)}>
+              <Meta
+                title={
+                  <h3 style={{ whiteSpace: "normal" }}>
+                    {job.title.toUpperCase()}
+                  </h3>
+                }
+                description={<p>{job.location}</p>}
+              />
+              <Divider />
+              <p>{job.description}</p>
+            </Card>
+          </Col>
+        ))}
       </Row>
     </main>
   );
 };
+const jobOffers = [
+  {
+    title: "quality analyst",
+    location: "Lille, France",
+    description: "Tech & DevOps / Lille / CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/quality-analyst-lille/",
+  },
+  {
+    title: "développeur java jee",
+    location: "Lille, France",
+    description: "Tech & DevOps / Lille / CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/developpeur-java-lille/",
+  },
+  {
+    title: "développeur node js",
+    location: "Lille, France",
+    description: "Tech & DevOps / Lille / CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/developpeur-node-js-lille/",
+  },
+  {
+    title: "développeur mobile (Android et/ou IOS)",
+    location: "Lille, France",
+    description: "Tech & DevOps / Lille / CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/developpeur-mobile-lille/",
+  },
+  {
+    title: "designer ux/ui",
+    location: "Lille, France",
+    description: "Experience Design (UX/UI) / Lille / CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/ux-ui-designer-lille/",
+  },
+  {
+    title: "scrum master",
+    location: "Lille, France",
+    description: "Scrum Mastering / Facilitation / Lille/ CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/scrum-master-lille/",
+  },
+  {
+    title: "product owner",
+    location: "Lille, France",
+    description: "Product Management & Innovation / Lille/ CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/product-owner-lille/",
+  },
+  {
+    title: "ingénieur devops",
+    location: "Lille, France",
+    description: "Tech & DevOps/ Lille/ CDI",
+    url: "https://careers.wemanity.com/fr/offres-emplois/ingenieur-devops-lille/",
+  },
+];
 
 export default Career;
