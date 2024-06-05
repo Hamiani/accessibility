@@ -92,7 +92,7 @@ const Services = () => {
 
 const serviceCards = [
   {
-    title: "Transformation, stratégie & change",
+    title: "Transformation, stratégie & change.",
     description: `Cadrer et accompagner votre transformation agile grâce à des
     équipes pluridisciplinaires et à notre approche globale, associant
     des assets à une expertise inégalée en agilité.`,
@@ -100,49 +100,49 @@ const serviceCards = [
       "https://wemanity.com/fr/organisations-agiles-conduite-changement/",
     imageLink:
       "https://wemanity.com/img/activities/how-we-can-help-you-activities-01.svg",
-    alt: "Transformation, stratégie & change",
+    alt: "Pictogramme blanc représentant la Gestion du changement et l'Agile.",
   },
   {
-    title: "Agile IT, architecture & API",
+    title: "Agile IT, architecture & API.",
     description: `Faire de la technologie un puissant moteur de votre stratégie
     business et construire un système d’information composable,
     ouvert, solide et frugal.`,
     serviceLink: "https://wemanity.com/fr/agile-IT/",
     imageLink:
       "https://wemanity.com/img/activities/how-we-can-help-you-agil-IT.svg",
-    alt: "Agile IT, architecture & API",
+    alt: "Pictogramme blanc représentant l'Agile IT.",
   },
   {
-    title: "Data & IA",
+    title: "Data & IA.",
     description: `Booster votre business à travers une utilisation stratégique et
     pérenne de vos données, axée sur l’approche client.`,
     serviceLink: "https://wemanity.com/fr/data/",
     imageLink:
       "https://wemanity.com/img/activities/how-we-can-help-you-activities-04.svg",
-    alt: "Data & IA",
+    alt: "Pictogramme blanc représentant le Data et l'intelligence artificielle.",
   },
   {
-    title: "Digital delivery & expérience utilisateur",
+    title: "Digital delivery & expérience utilisateur.",
     description: `Concevoir et délivrer des produits digitaux innovants, adaptés aux
     usages de vos clients grâce à nos équipes pluridisciplinaires.`,
     serviceLink:
       "https://wemanity.com/fr/experience-utilisateur-digital-delivery/",
     imageLink:
       "https://wemanity.com/img/activities/how-we-can-help-you-activities-05.svg",
-    alt: "Digital delivery & expérience utilisateur",
+    alt: "Pictogramme blanc représentant le Digital Delivery.",
   },
   {
-    title: "Centre de formation",
+    title: "Centre de formation.",
     description: `Soutenir votre transformation par une expérience de formation
     sur-mesure pour ancrer les nouvelles compétences et les nouvelles
     formes de leadership.`,
     serviceLink: "https://wemanity.com/fr/centre-de-formation/",
     imageLink:
       "https://wemanity.com/img/activities/how-we-can-help-you-activities-07.svg",
-    alt: "Centre de formation",
+    alt: "Pictogramme blanc représentant le Centre de formation.",
   },
   {
-    title: "Sustainable shift",
+    title: "Sustainable shift.",
     description: `Les entreprises ne peuvent plus se contenter de se transformer ;
     elles doivent élargir leurs critères de performance afin d’innover
     de manière durable. Nous les accompagnons dans l’accélération de
@@ -150,7 +150,7 @@ const serviceCards = [
     techforgood et l’Agile.`,
     serviceLink: null,
     imageLink: "https://wemanity.com/img/activities/sustainable-shift.svg",
-    alt: "Sustainable shift",
+    alt: "Pictogramme blanc représentant la Sustainable shift.",
   },
 ];
 

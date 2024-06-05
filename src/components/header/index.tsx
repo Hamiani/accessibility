@@ -31,29 +31,62 @@ const Header = () => {
           src="https://wemanity.com/img/menu/logo-wemanity-home-page.png"
           alt="le logo de wemanity"
         />
-        <nav ref={menuRef} className={`topnav ${menuOpen ? "responsive" : ""}`}>
+        <nav
+          aria-label="Le menu de navigation"
+          ref={menuRef}
+          className={`topnav ${menuOpen ? "responsive" : ""}`}
+        >
           <div>
-            <Link to="/" onClick={onCloseMenu}>
+            <Link
+              to="/"
+              onClick={onCloseMenu}
+              aria-label="Aller à la page d'accueil"
+            >
               Accueil
             </Link>
-            <Link to="/history" onClick={onCloseMenu}>
+            <Link
+              to="/history"
+              onClick={onCloseMenu}
+              aria-label="Aller à la page notre histoire"
+            >
               Notre histoire
             </Link>
-            <Link to="/services" onClick={onCloseMenu}>
+            <Link
+              to="/services"
+              onClick={onCloseMenu}
+              aria-label="Aller à la page nos services"
+            >
               Nos services
             </Link>
-            <Link to="/team" onClick={onCloseMenu}>
+            <Link
+              to="/team"
+              onClick={onCloseMenu}
+              aria-label="Aller à la page notre équipe"
+            >
               Notre équipe
             </Link>
-            <Link to="/career" onClick={onCloseMenu}>
+            <Link
+              to="/career"
+              onClick={onCloseMenu}
+              aria-label="Aller à la page site carrière"
+            >
               Site carrière
             </Link>
           </div>
           <div>
-            <button onClick={() => setIsOpen(true)}>Contact</button>
+            <button
+              aria-label="ouvrir la fenêtre contextuelle du contact"
+              onClick={() => setIsOpen(true)}
+            >
+              Contact
+            </button>
           </div>
         </nav>
-        <button className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          aria-label="ouvrir le menu d'en-tête"
+          className="menu-icon"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           &#9776;
         </button>
       </header>

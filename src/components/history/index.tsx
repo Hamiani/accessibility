@@ -4,7 +4,7 @@ import "./history.css";
 
 const History = () => {
   return (
-    <main className="content history">
+    <main className="content history" aria-label="Histoire de Wemanity">
       <h1 style={{ textAlign: "center" }}>Notre Histoire</h1>
       <Steps
         direction="vertical"
@@ -12,7 +12,7 @@ const History = () => {
         size="default"
         items={[
           {
-            title: <h2>Fondation de Wemanity</h2>,
+            title: <h2>Fondation de Wemanity.</h2>,
             status: "process",
             description: (
               <>
@@ -23,7 +23,7 @@ const History = () => {
                 </p>
                 <h3>
                   Lancement de notre activité Transformation agile des
-                  organisations
+                  organisations.
                 </h3>
                 <p>
                   Création en quelques années de la plus grande communauté Agile
@@ -34,7 +34,7 @@ const History = () => {
             icon: (
               <>
                 <CiCircleCheck size={60} aria-hidden="true" />
-                <span>2013</span>
+                <span id="2013">2013</span>
               </>
             ),
           },
@@ -42,7 +42,7 @@ const History = () => {
             title: (
               <h2>
                 Lancement de nos activités Tech et de nos dispositifs de squads
-                techniques
+                techniques.
               </h2>
             ),
             status: "process",
@@ -52,7 +52,7 @@ const History = () => {
                   Nous adressons le scope historique de l’agilité, la DSI, et
                   impactons réellement le delivery.
                 </p>
-                <h3>Ouverture de nos bureaux à Bruxelles, Belgique</h3>
+                <h3>Ouverture de nos bureaux à Bruxelles, Belgique.</h3>
               </>
             ),
             icon: (
@@ -63,7 +63,7 @@ const History = () => {
             ),
           },
           {
-            title: <h2>Ouverture de nos bureaux aux Pays-Bas</h2>,
+            title: <h2>Ouverture de nos bureaux aux Pays-Bas.</h2>,
             status: "process",
             description: (
               <>
@@ -73,7 +73,7 @@ const History = () => {
                 </p>
                 <h3>
                   Lancement de notre activité Expérience Utilisateur et Digital
-                  Delivery sous la marque Wemanity Digital
+                  Delivery sous la marque Wemanity Digital.
                 </h3>
                 <p>
                   Objectif : concevoir des produits et services digitaux
@@ -90,7 +90,7 @@ const History = () => {
           },
           {
             status: "process",
-            title: <h2>Lancement de notre programme RSE Weimpact</h2>,
+            title: <h2>Lancement de notre programme RSE Weimpact.</h2>,
             icon: (
               <>
                 <CiCircleCheck size={60} aria-hidden="true" />
@@ -101,7 +101,7 @@ const History = () => {
           {
             status: "process",
             title: (
-              <h2>Lancement de notre activité Data sous la marque Wewyse</h2>
+              <h2>Lancement de notre activité Data sous la marque Wewyse.</h2>
             ),
             description: (
               <>
@@ -111,26 +111,26 @@ const History = () => {
                 </p>
                 <h3>
                   Lancement de notre Learning Center sous la marque Wemanity
-                  Learning Center
+                  Learning Center.
                 </h3>
                 <p>
                   Objectif : accompagner et former le capital humain des
                   organisations.
                 </p>
-                <h3>Ouverture de nos bureaux au Maroc</h3>
-                <h3>Ouverture de nos bureaux à Lille, France</h3>
+                <h3>Ouverture de nos bureaux au Maroc.</h3>
+                <h3>Ouverture de nos bureaux à Lille, France.</h3>
               </>
             ),
             icon: (
               <>
                 <CiCircleCheck size={60} aria-hidden="true" />
-                <span>2019</span>
+                <span>2018</span>
               </>
             ),
           },
           {
             status: "process",
-            title: <h2>Intégration de Management 3.0</h2>,
+            title: <h2>Intégration de Management 3.0.</h2>,
             description: (
               <>
                 <p>
@@ -140,7 +140,7 @@ const History = () => {
                 </p>
                 <h3>
                   Lancement de nos premières transformations en Asie et en
-                  Amérique avec Arie van Bennekum
+                  Amérique avec Arie van Bennekum.
                 </h3>
               </>
             ),
@@ -153,7 +153,7 @@ const History = () => {
           },
           {
             status: "process",
-            title: <h2>Acquisition de DigitalScaler</h2>,
+            title: <h2>Acquisition de DigitalScaler.</h2>,
             description: (
               <>
                 <p>
@@ -171,7 +171,7 @@ const History = () => {
           },
           {
             status: "process",
-            title: <h2>Ouverture de nos bureaux à Anvers, Belgique</h2>,
+            title: <h2>Ouverture de nos bureaux à Anvers, Belgique.</h2>,
             icon: (
               <>
                 <CiCircleCheck size={60} aria-hidden="true" />
@@ -181,7 +181,7 @@ const History = () => {
           },
           {
             status: "process",
-            title: <h2>Wemanity rejoint Reply et son réseau d’entreprises</h2>,
+            title: <h2>Wemanity rejoint Reply et son réseau d’entreprises.</h2>,
             description: (
               <>
                 <p>
@@ -192,7 +192,7 @@ const History = () => {
                 </p>
                 <h3>
                   Wemanity France devient membre de la French Tech Corporate
-                  Community
+                  Community.
                 </h3>
                 <p>
                   La French Tech Corporate Community est l’un des 120 grands

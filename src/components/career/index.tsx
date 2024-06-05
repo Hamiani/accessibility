@@ -10,9 +10,13 @@ const Career = () => {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
   return (
     <main className="content career">
-      <Row justify={"space-between"} align={"middle"}>
+      <Row
+        justify={"space-between"}
+        align={"middle"}
+        aria-label="présentation de la ville et de la localisation de l'entreprise"
+      >
         <Col xs={24} sm={24} md={10} lg={10} xl={8} xxl={8}>
-          <h1 id="lille-heading">LILLE</h1>
+          <h1>LILLE</h1>
           <p>
             Surnommée la capitale des Flandres, où se côtoient intempéries et
             amateurs de bières, on ne présente plus Lille ! Notre équipe
@@ -29,14 +33,17 @@ const Career = () => {
           <img
             width={isMobile ? 400 : 700}
             height={isMobile ? 400 : 500}
-            aria-labelledby="lille-heading"
             alt="Cinq personnages dans un bureau avec le beffroi de Lille en arrière plan"
             src="https://careers.wemanity.com/img/offices/header-office-lille.svg"
           />
         </Col>
       </Row>
       <h2 id="amenities-heading">LES À-CÔTÉS SYMPAS DE NOS LOCAUX</h2>
-      <Row justify={"space-between"} className="pt-2">
+      <Row
+        justify={"space-between"}
+        className="pt-2"
+        aria-label="liste des commodités"
+      >
         <Col className="center" span={4}>
           <img
             height={50}
@@ -83,7 +90,12 @@ const Career = () => {
           <p>Bureau lumineux</p>
         </Col>
       </Row>
-      <Row className="pt-2" justify={"space-between"} gutter={[16, 16]}>
+      <Row
+        className="pt-2"
+        justify={"space-between"}
+        gutter={[16, 16]}
+        aria-label="photos de bureaux"
+      >
         <Col xs={24} sm={24} md={16} lg={16} xl={16} xxl={16}>
           <img
             className="office-picture"
@@ -121,6 +133,7 @@ const Career = () => {
         justify="space-between"
         gutter={[16, 16]}
         align="middle"
+        aria-label="une liste des emplois à lille"
       >
         {jobOffers.map((job, index) => (
           <Col
@@ -152,51 +165,51 @@ const Career = () => {
 };
 const jobOffers = [
   {
-    title: "quality analyst",
-    location: "Lille, France",
+    title: "quality analyst.",
+    location: "Lille, France.",
     description: "Tech & DevOps / Lille / CDI",
     url: "https://careers.wemanity.com/fr/offres-emplois/quality-analyst-lille/",
   },
   {
-    title: "développeur java jee",
-    location: "Lille, France",
+    title: "développeur java jee.",
+    location: "Lille, France.",
     description: "Tech & DevOps / Lille / CDI",
     url: "https://careers.wemanity.com/fr/offres-emplois/developpeur-java-lille/",
   },
   {
-    title: "développeur node js",
-    location: "Lille, France",
-    description: "Tech & DevOps / Lille / CDI",
+    title: "développeur node js.",
+    location: "Lille, France.",
+    description: "Tech & DevOps / Lille / CDI.",
     url: "https://careers.wemanity.com/fr/offres-emplois/developpeur-node-js-lille/",
   },
   {
-    title: "développeur mobile (Android et/ou IOS)",
-    location: "Lille, France",
-    description: "Tech & DevOps / Lille / CDI",
+    title: "développeur mobile (Android et/ou IOS).",
+    location: "Lille, France.",
+    description: "Tech & DevOps / Lille / CDI.",
     url: "https://careers.wemanity.com/fr/offres-emplois/developpeur-mobile-lille/",
   },
   {
-    title: "designer ux/ui",
-    location: "Lille, France",
-    description: "Experience Design (UX/UI) / Lille / CDI",
+    title: "designer ux/ui.",
+    location: "Lille, France.",
+    description: "Experience Design (UX/UI) / Lille / CDI.",
     url: "https://careers.wemanity.com/fr/offres-emplois/ux-ui-designer-lille/",
   },
   {
-    title: "scrum master",
-    location: "Lille, France",
-    description: "Scrum Mastering / Facilitation / Lille/ CDI",
+    title: "scrum master.",
+    location: "Lille, France.",
+    description: "Scrum Mastering / Facilitation / Lille/ CDI.",
     url: "https://careers.wemanity.com/fr/offres-emplois/scrum-master-lille/",
   },
   {
-    title: "product owner",
-    location: "Lille, France",
+    title: "product owner.",
+    location: "Lille, France.",
     description: "Product Management & Innovation / Lille/ CDI",
     url: "https://careers.wemanity.com/fr/offres-emplois/product-owner-lille/",
   },
   {
-    title: "ingénieur devops",
-    location: "Lille, France",
-    description: "Tech & DevOps/ Lille/ CDI",
+    title: "ingénieur devops.",
+    location: "Lille, France.",
+    description: "Tech & DevOps/ Lille/ CDI.",
     url: "https://careers.wemanity.com/fr/offres-emplois/ingenieur-devops-lille/",
   },
 ];
