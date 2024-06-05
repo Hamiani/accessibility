@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Modal } from "antd";
 import "./header.css";
 
 const Header = () => {
+  const menuRef = useRef<HTMLDivElement | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const onCloseMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef, setMenuOpen]);
 
   return (
     <>
@@ -14,13 +31,23 @@ const Header = () => {
           src="https://wemanity.com/img/menu/logo-wemanity-home-page.png"
           alt="le logo de wemanity"
         />
-        <nav className={`topnav ${menuOpen ? "responsive" : ""}`}>
+        <nav ref={menuRef} className={`topnav ${menuOpen ? "responsive" : ""}`}>
           <div>
-            <Link to="/">Accueil</Link>
-            <Link to="/history">Notre histoire</Link>
-            <Link to="/services">Nos services</Link>
-            <Link to="/team">Notre équipe</Link>
-            <Link to="/career">Site carrière</Link>
+            <Link to="/" onClick={onCloseMenu}>
+              Accueil
+            </Link>
+            <Link to="/history" onClick={onCloseMenu}>
+              Notre histoire
+            </Link>
+            <Link to="/services" onClick={onCloseMenu}>
+              Nos services
+            </Link>
+            <Link to="/team" onClick={onCloseMenu}>
+              Notre équipe
+            </Link>
+            <Link to="/career" onClick={onCloseMenu}>
+              Site carrière
+            </Link>
           </div>
           <div>
             <button onClick={() => setIsOpen(true)}>Contact</button>
