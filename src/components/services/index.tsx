@@ -52,9 +52,10 @@ const Services = () => {
         </Col>
       </Row>
       <Row justify="space-between" gutter={[48, 16]} align="middle">
-        {serviceCards.map((service) => {
+        {serviceCards.map((service, index) => {
           return (
             <Col
+              key={`services-${index}`}
               style={{ display: "inline-flex", alignSelf: "stretch" }}
               xs={24}
               sm={24}

@@ -123,7 +123,15 @@ const Career = () => {
         align="middle"
       >
         {jobOffers.map((job, index) => (
-          <Col key={index} xs={24} sm={24} md={12} lg={12} xl={6} xxl={6}>
+          <Col
+            key={`job-${index}`}
+            xs={24}
+            sm={24}
+            md={12}
+            lg={12}
+            xl={6}
+            xxl={6}
+          >
             <Card hoverable role="button" onClick={() => openInNewTab(job.url)}>
               <Meta
                 title={
